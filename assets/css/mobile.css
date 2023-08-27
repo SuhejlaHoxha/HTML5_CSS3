@@ -1,0 +1,172 @@
+@media screen and (max-width: 765px){
+
+
+    body{
+        width: fit-content;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    label i {
+        font-size: 1.5em;
+        color: var(--purple);
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    label,
+    input {
+        display: block;
+    }
+
+    .toggle-menu:checked+nav {
+        display: block;
+    }
+
+    .toggle-menu:not(:checked)~nav {
+        display: none;
+    }
+
+    nav {
+        display: none;
+        background-color: #fff;
+        position: absolute;
+        top: 100px;
+        left: 0px;
+        z-index: 3;
+    }
+
+    nav,
+    nav ul {
+        width: 100%;
+    }
+
+    nav ul {
+        display: grid;
+    }
+
+    .menu-icon {
+        display: block;
+        color: var(--purple);
+      
+    }
+
+    main .container {
+        height: auto;
+        justify-content: center;
+        display: flex;
+    }
+
+    main .image{
+        display: none;
+    }
+
+    main .card{
+        position: relative;
+    }
+
+    #experience .img{
+        display: none;
+    }
+
+    .experience div{
+        text-align: center;
+        width: auto;
+    }
+
+    #experience .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #experience .experience{
+        justify-content: center;
+    }
+
+    #experience .statistics {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #experience .exp{
+        margin: 20px auto;
+        
+    }
+
+    #benefits .container{
+        display: block;
+    }
+
+    #benefits .benefits{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .benefits .white-card{
+        width: 300px;
+    } 
+
+    #proccess img{
+        display: none;
+    }
+
+    #proccess .container{
+        display: block;
+    }
+
+    #proccess .prc-card{
+        display: flex;
+    }
+
+    #costumer .container{
+        display: block;
+    }
+
+    #costumer .costumer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #costumer .cstm{
+        width: 350px;
+        margin: 50px auto;
+    }
+
+    /*#subscribe .container{
+        display: grid;
+        position: statis;
+        bottom: 0%; 
+        top: auto;
+        bottom: -1950px;
+        left: -320px; 
+    } */
+
+    #subscribe .container{
+        margin: 30px;
+    }
+
+    #subscribe .subscribe,
+    #subscribe .form{
+        width: auto;
+    } 
+
+    footer .container{
+        height: auto;
+    }
+
+    footer .footer{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--purple);
+    }
+
+    footer .ftr{
+        margin-top: 0px;
+        
+    } 
+}
