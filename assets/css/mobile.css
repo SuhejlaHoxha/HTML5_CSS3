@@ -1,29 +1,18 @@
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 765px){
+
+
+    body{
+        width: fit-content;
+    }
+
     .container {
         width: 90%;
         margin: 0 auto;
     }
 
-    .section-title h2 {
-        font-size: 1.5em;
-    }
-
-    .courses,
-    .team,
-    .stats,
-    .posts,
-    footer .container {
-        grid-template-columns: 1fr;
-    }
-
-    .companies {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-
     label i {
         font-size: 1.5em;
-        color: var(--blue);
+        color: var(--purple);
     }
 
     input[type="checkbox"] {
@@ -49,6 +38,7 @@
         position: absolute;
         top: 100px;
         left: 0px;
+        z-index: 3;
     }
 
     nav,
@@ -56,55 +46,223 @@
         width: 100%;
     }
 
-    nav ul li {
-        display: block;
+    nav ul {
+        display: grid;
+    }
+
+    nav ul li{
+        font-size: 40px;
+        margin: 15px auto;
     }
 
     .menu-icon {
         display: block;
-        color: var(--blue);
-        font-size: 1.5em;
-    }
-
-    main {
-        padding: 80px 0px;
-    }
-
-    div.intro div {
-        flex-direction: column;
-    }
-
-    div.intro h1 {
-        font-size: 32px;
-        line-height: 42px;
-    }
-
-    .rating>div {
-        margin-top: 20px;
+        color: var(--purple);
+      
     }
 
     main .container {
-        height: auto;
+       
+        justify-content: center;
+        display: flex;
     }
 
-    div.intro {
-        width: 100%;
-        padding-right: 0px;
-    }
-
-    div.illustration {
+    main .image{
         display: none;
     }
 
-    .courses .card h3 {
-        font-size: 1.4em;
+    main .card{
+        width: auto;
+        position: relative;
+        font-size: 35px;
     }
 
-    .stats div {
-        height: 160px;
+    main .card p{
+        font-size: 35px;
     }
 
-    footer h3 {
-        margin-top: 40px;
+    #experience .container .section-title{
+        text-align: center;
+        font-size: 50px;
+    }
+
+    #experience .experience p{
+        font-size: 40px;
+    }
+
+    #experience .img{
+        display: none;
+    }
+
+    .experience div{
+        text-align: center;
+        width: auto;
+    }
+
+    #experience .container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #experience .experience{
+        justify-content: center;
+    }
+
+    #experience .statistics {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #experience .exp{
+        margin: 20px auto; 
+    }
+
+    .statistics span{
+        font-size: 35px;
+    }
+
+    #experience button{
+        padding: 15px;
+        width: auto;
+        height: auto;
+        font-size: 40px;
+    }
+
+    #benefits .container{
+        display: block;
+    }
+
+    #benefits .section-title{
+        text-align: center;
+        font-size: 50px;
+    }
+
+    #benefits .benefits{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .benefits .white-card{
+        width: auto;
+        font-size: 35px;
+    } 
+
+    .white-card i{
+        font-size: 70px;
+    }
+
+    .white-card .text h4{
+        font-size: 50px;
+    }
+
+    #proccess .section-title{
+        text-align: center;
+        font-size: 50px;
+    }
+
+    #proccess img{
+        display: none;
+    }
+
+    #proccess .container{
+        display: block;
+    }
+
+    #proccess .prc-card{
+        display: flex;
+    }
+
+    .prc-card .text{
+        /*width: auto;*/
+    }
+
+    .prc-card i{
+        width: 100px;
+        height: 100px;
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .prc-card .text h4{
+        font-size: 50px;
+    }
+
+    .prc-card .text p{
+        font-size: 40px;
+    }
+
+    #costumer .container{
+        display: block;
+    }
+
+    #costumer .section-title{
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .cstm h4{
+        font-size: 50px;
+    }
+
+    .cstm p{
+        font-size: 40px;
+    }
+
+    .cstm .details img{
+        height: 200px;
+    }
+
+    #costumer .costumer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #costumer .cstm{
+        width: auto;
+        margin: 50px auto;
+    }
+
+    #subscribe .section-title{
+        text-align: center;
+        font-size: 50px;
+    }
+
+    #subscribe .section-title~p{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #subscribe .container{
+        margin: 30px;
+    }
+
+    #subscribe .subscribe,
+    #subscribe .form{
+        width: auto;
+    } 
+
+    #subscribe input,
+    #subscribe button{
+        font-size: 35px;
+    }
+
+    footer .container{
+        height: auto;
+    }
+
+    footer .footer{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--purple);
+    }
+
+    footer .ftr{
+        margin-top: 0px;
+    } 
+
+    .ftr h3,
+    .ftr p,
+    .ftr li a{
+        font-size: 35px;
     }
 }
